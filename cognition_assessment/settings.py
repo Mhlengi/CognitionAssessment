@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'cognition_assessment.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'db_tangent_solutions',
+        'NAME': 'cognition_assessment',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST': '',
