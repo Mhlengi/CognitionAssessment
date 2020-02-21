@@ -46,10 +46,16 @@ Other applicaiton endpoints and usage
 ```
 python manage.py createsuperuser
 ```
+- Default superuser credential access
+username/email : `admin@gmail.com`
+password : `admin12345`
 
 ### Step 1:
 - Create/Register a normal system-user or super-user.
 - Link: [https://cognition-assessment.herokuapp.com/signup/](https://cognition-assessment.herokuapp.com/signup/)
+- Registered user credential access
+username/email : `test@gmail.com`
+password : `test12345`
 
 ### Step 2:
 - Basic user profile update.
