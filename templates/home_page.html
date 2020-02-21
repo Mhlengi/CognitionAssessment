@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        {% include 'core/ticket_list.html' %}
+    {% else %}
+        {% include 'registration/login_section.html' %}
+    {% endif %}
+{% endblock %}

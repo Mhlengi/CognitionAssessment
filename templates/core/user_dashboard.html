@@ -1,0 +1,126 @@
+<section>
+  <div class="container">
+    <div class="row noti-div">
+      <div class="col-lg-3 col-md-3 col-sm-3  text-center">
+        <a href="#">
+          <div class="alert alert-success">
+            <i class="fa fa-folder-open-o fa-4x"></i>
+            <span class="label label-warning">Open Tickets</span>
+            <span class="label label-success">45</span>
+            <p>
+              New Open Tickets Which Are Not Replied Yet
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3  text-center">
+        <a href="#">
+          <div class="alert alert-danger">
+            <i class="fa fa-envelope-o fa-4x"></i>
+            <span class="label label-info">Notifications</span>
+            <span class="label label-danger">5</span>
+            <p>
+              New Unread Notifications Sent by Admin to you
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3  text-center">
+        <a href="#">
+          <div class="alert alert-warning">
+            <i class="fa fa-briefcase fa-4x"></i>
+            <span class="label label-success">Total Tickets</span>
+            <span class="label label-warning">2065</span>
+            <p>
+              The Total Ticket Which You Send Till Date
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 text-center">
+        <a href="#">
+          <div class="alert alert-info">
+            <i class="fa fa-comments-o fa-4x"></i>
+
+            <span class="label label-danger">New Reply</span>
+            <span class="label label-info">145</span>
+            <p>
+              New Unseen Replies Of Your Support Tickets
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 col-md-9 col-sm-9 alert alert-info">
+        <h3 class=" text-center">Compose New Support Ticket</h3>
+        <div class="hr-div"><hr /></div>
+        <form>
+          <div class="form-group col-lg-4 col-md-4 col-sm-4">
+            <label>Please Select Category</label>
+            <select class="form-control">
+              <option>Product Support </option>
+              <option>Billing Information</option>
+              <option>Template Support</option>
+              <option>General Information </option>
+            </select>
+          </div>
+          <div class="form-group col-lg-4 col-md-4 col-sm-4">
+            <label>Please Select Priority</label>
+            <select class="form-control">
+              <option>Very High </option>
+              <option>High</option>
+              <option>Medium</option>
+              <option>Low </option>
+            </select>
+          </div>
+          <div class="form-group col-lg-4 col-md-4 col-sm-4">
+            <label>Current Status</label>
+            <select class="form-control">
+              <option>Open</option>
+            </select>
+          </div>
+          <div class="form-group col-lg-12 col-md-12 col-sm-12">
+            <label>Please Write a Subject Line</label>
+            <input
+              type="text"
+              class="form-control"
+              required="required"
+              placeholder="Enter Subject Of Ticket"
+            />
+          </div>
+          <div class="form-group col-lg-12 col-md-12 col-sm-12">
+            <label>Please Enter Issue</label>
+            <textarea class="form-control" rows="14"></textarea>
+          </div>
+
+          <div class="form-group col-lg-12 col-md-12 col-sm-12">
+            <button type="submit" class="btn btn-primary">Send Ticket</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3">
+        <a href="/logout/" class=" label label-danger"
+          ><strong>LOGOUT / SINGOUT</strong>
+        </a>
+        <div class="list-group">
+          <a href="#" class="list-group-item active">Quick Links </a>
+          <a href="/dashboard/" class="list-group-item">My Dashboard</a>
+          <a href="#" class="list-group-item">Open Tickets</a>
+          <a href="#" class="list-group-item">Admin Notifications</a>
+          <a href="#" class="list-group-item">All Tickets</a>
+        </div>
+        <div class="list-group">
+          <a href="#" class="list-group-item active">Support Categories </a>
+          <a href="/dashboard/" class="list-group-item">Product</a>
+          <a href="/dashboard/" class="list-group-item">Accounts</a>
+          <a href="/dashboard/" class="list-group-item">IT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

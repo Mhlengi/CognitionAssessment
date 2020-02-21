@@ -1,0 +1,114 @@
+{% load static %}
+
+<html>
+  <head>
+    <title>Cognition Support Center</title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="{% static 'assets/css/bootstrap.css' %}" rel="stylesheet" />
+    <!-- FONT AWESOME CSS -->
+    <link
+      href="{% static 'assets/css/font-awesome.min.css' %}"
+      rel="stylesheet"
+    />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
+
+    <!-- <link rel="stylesheet"
+          href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->
+    <link
+      href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Nova+Flat"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <!-- <div class="page-header">
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div> -->
+    <div id="head">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <a href="/" style="text-decoration: none;">
+              <span style="text-decoration: none;">
+                <h2>Cognition Support Center</h2></span
+              >
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+            <img
+              src="{% static 'assets/img/top-mouse.png' %}"
+              class="header-mid"
+            />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <h4><span>Call:</span> 021-678-8637</h4>
+            <h4><span>E-mail:</span> info@cognitionsupport.com</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content container overflow-auto">
+      <div class="row">
+        <div class="col-md-8">
+          {% block content %} {% endblock %}
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <h3>Physical Location</h3>
+            <p>
+              <i>Addresss :</i> 11 Emily Hobhouse St, Goodwood,
+              <br />
+              Cape Town, South Africa.
+              <br />
+              &copy; 2014 Cognition Support Center
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <h3>Get Quick Help</h3>
+            <h4><span> Call: </span>021-678-8637</h4>
+            <h4><span>E-mail: </span>info@cognitionsupport.com</h4>
+            <h4><span>Skype:</span> mhlengi</h4>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <h3>Subscribe For Updates</h3>
+            <form>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  required="required"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-danger">
+                  Click To Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  Jquery Core Script -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!--  Core Bootstrap Script -->
+    <script src="assets/js/bootstrap.js"></script>
+  </body>
+</html>

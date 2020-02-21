@@ -1,0 +1,78 @@
+{% extends 'base.html' %} 
+
+{% load static %} 
+
+{% block content %}
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <img
+          src="{% static 'assets/img/moniter.png' %}"
+          class="img-responsive img-max-width"
+        />
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <h3>Account Login</h3>
+        {% if user.is_authenticated %}
+        <h2>Logout</h2>
+        <a href="{% url 'logout' %}?next=/login/">
+          Log out
+        </a>
+        {% else %}
+        <form method="post">
+          {% csrf_token %} {{ form.as_p }}
+          <button type="submit">Login</button>
+          <br />
+          <strong>Note: </strong>By Singing you agree to our
+          <a href="#">terms & policies</a>
+        </form>
+        {% endif %}
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <img
+          src="{% static 'assets/img/premium.png' %}"
+          class="img-responsive"
+        />
+        <h3>Our Premium Support</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium
+          lectus vel justo iaculis blandit. Nulla facilisi. In hac habitasse
+          platea dictumst.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <img src="{% static 'assets/img/award.png'%}" class="img-responsive" />
+        <h3>Award Winning Company</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium
+          lectus vel justo iaculis blandit. Nulla facilisi. In hac habitasse
+          platea dictumst.
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <h3>Don't have an account?</h3>
+        <a href="{% url 'signup' %}?next=/login/" class="btn btn-primary"
+          >Click Here To Register</a>
+        <br />
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <img src="{% static 'assets/img/up.png' %}" class="img-responsive" />
+        <h3>We Are Up 24x7 For You</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium
+          lectus vel justo iaculis blandit. Nulla facilisi. In hac habitasse
+          platea dictumst.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
