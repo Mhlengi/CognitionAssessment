@@ -28,6 +28,7 @@ def signup(request):
     return render(request, 'registration/signup.html', {'form': form})
 
 
+@login_required
 def dashboard(request):
     return render(request, 'dashboard.html')
 
